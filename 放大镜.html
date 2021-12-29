@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>放大镜</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			font-size: 0;
+		}
+		.box1,
+		.box4,
+		#box2 img{
+			width: 300px;
+			height: 300px;
+		}
+		.box1{
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			position: fixed;
+			border: 1px solid #424242;
+		}
+		#box2{
+			position: absolute;
+		}
+		.box3{
+			top: 0;
+			left: 0;
+			position: absolute;
+			background-color: rgba(50,50,50,.3);
+			display: none;
+		}
+		.box4{
+			position: absolute;
+			top: 0;
+			left: 301px;
+			display: none;
+			overflow: hidden;
+		}
+		.box4 img{
+			position: absolute;
+		}
+		.disblcok{
+			display: block;
+		}
+		.disnone{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div id="box2">
+			<img src="1.png" alt="">
+			<div class="box3"></div>
+		</div>
+		<div class="box4">
+			<img src="2.png" alt="" id="mag">
+		</div>
+	</div>
+	<script type="text/javascript" src="mag.js"></script>
+</body>
+</html>
